@@ -17,26 +17,5 @@ typedef vector<ULLD> VULLD;
 
 int main()
 {
-    int s,t,a,b,m,n,q,scorea=0,scoreb=0;
-    scanf("%d %d",&s,&t);
-    scanf("%d %d",&a,&b);
-    scanf("%d %d",&m,&n);
-    rep(i,m)
-    {
-        scanf("%d",&q);
-        if(q+a>=s && q+a<=t) scorea++;
-    }
-    printf("%d\n",scorea);
-
-
-    rep(i,n)
-    {
-        scanf("%d",&q);
-        if(q+b>=s && q+b<=t) scoreb++;        
-    }
-    printf("%d",scoreb);
-
-
-
-
+    return 0;
 }
