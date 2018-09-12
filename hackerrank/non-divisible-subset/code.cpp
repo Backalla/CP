@@ -40,10 +40,13 @@ int main()
         remainders[q%k]+=1;
     }
     int r=min(remainders[0],1);
+    // int r=1;
+    if (k % 2 == 0)
+        remainders[k/2] = min(remainders[k/2], 1);
     for(int i=1;i<(k/2)+1;++i)
     {
         // printf("%d > %d\n",i,remainders[i]);
-        if(i!=k-i || )
+        // if(i!=k-i )
         r+=max(remainders[i],remainders[k-i]);
     }
 
